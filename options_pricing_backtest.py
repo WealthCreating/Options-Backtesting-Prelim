@@ -106,8 +106,8 @@ class Backtest(Options_Pricing):
         shortCredit,longCredit = [],[]
 
         ## Checks if RSI is less than 30 or greater than 70
-        ## Less than 30 == Call Spread
-        ## Greater than 70 == Put Spread
+        ## Less than 30 == Put Spread
+        ## Greater than 70 == Call Spread
         for i in df.index:
             validDates.append(i)
             if df["RSI"][i] > 70:
